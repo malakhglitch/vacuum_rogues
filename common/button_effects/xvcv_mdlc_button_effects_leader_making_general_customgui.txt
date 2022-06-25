@@ -1,0 +1,79 @@
+#general traits
+add_xvcv_mdlc_leader_trait_general_1_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 1 }
+        xvcv_mdlc_leader_trait_costs_button_trigger_alt = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 1 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect_alt = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_general_2_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 2 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 2 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }     
+    }
+}
+add_xvcv_mdlc_leader_trait_general_3_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 3 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 3 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }      
+    }
+}
+add_xvcv_mdlc_leader_trait_general_4_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 4 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 4 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_general_5_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 5 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 5 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_general_6_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = general ID = 6 }
+        xvcv_mdlc_leader_trait_costs_button_trigger_alt = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_general_button_trigger = yes
+    }   
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = general ID = 6 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect_alt = yes }
+    }
+}

@@ -1,0 +1,24 @@
+xvcv_mdlc_leader_making = {
+	length = 0
+	icon = "GFX_edict_xvcv_mdlc_leader_making"
+	resources = { category = edicts upkeep = { } }
+
+	effect = {
+		hidden_effect = {
+			country_event = { id = xvcv_mdlc_customgui.1 } 
+		}
+	}
+
+	potential = {
+		is_ai = no
+		has_technology = xvcv_mdlc_tech_leader_making
+	}
+
+	allow = {
+		has_authority = auth_machine_intelligence
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

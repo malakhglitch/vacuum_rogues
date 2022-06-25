@@ -1,0 +1,13 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		xvcv_mdlc_active.1 #set a global flag to detect this mod
+	}
+}
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		xvcv_mdlc_customgui.2 #'xvcv_mdlc_tech_leader_making_improvement' tech effect event
+	}
+}

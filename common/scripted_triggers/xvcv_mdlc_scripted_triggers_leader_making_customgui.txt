@@ -1,0 +1,81 @@
+xvcv_mdlc_leader_trait_pick_button_trigger = {
+    custom_tooltip = tooltip_xvcv_mdlc_leader_trait_$CLASS$_$ID$
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_already_picked_trait.fail
+        NOT = { has_country_flag = xvcv_mdlc_leader_trait_$CLASS$_$ID$ }
+    }
+}
+xvcv_mdlc_leader_trait_costs_button_trigger = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_trait_cost.fail
+        has_country_resource = { type = energy amount >= 200 }
+        has_country_resource = { type = alloys amount >= 100 }
+    }
+}
+xvcv_mdlc_leader_trait_costs_button_trigger_alt = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_trait_cost.fail_alt
+        has_country_resource = { type = energy amount >= 1000 }
+        has_country_resource = { type = alloys amount >= 500 }
+    }
+}
+xvcv_mdlc_leader_trait_points_button_trigger = {
+    if = {
+        limit = { NOT = { has_technology = xvcv_mdlc_tech_leader_making_improvement } }
+        custom_tooltip_fail = {
+            text = xvcv_mdlc_leader_trait_points.fail
+            check_variable = { which = xvcv_mdlc_leader_making_trait_points value > 0 } #same trigger
+        }
+    }
+    else_if = {
+        limit = { has_technology = xvcv_mdlc_tech_leader_making_improvement }
+        custom_tooltip_fail = {
+            text = xvcv_mdlc_leader_trait_points.fail_alt #different tooltip
+            check_variable = { which = xvcv_mdlc_leader_making_trait_points value > 0 }
+        }
+    }
+}
+xvcv_mdlc_leader_class_admiral_button_trigger = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_already_picked_class.fail
+        NOR = {
+            has_country_flag = xvcv_mdlc_leader_class_set_to_governor
+            has_country_flag = xvcv_mdlc_leader_class_set_to_scientist
+
+            has_country_flag = xvcv_mdlc_leader_class_set_to_general
+        }
+    }
+}
+xvcv_mdlc_leader_class_general_button_trigger = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_already_picked_class.fail
+        NOR = {
+            has_country_flag = xvcv_mdlc_leader_class_set_to_governor
+            has_country_flag = xvcv_mdlc_leader_class_set_to_scientist
+            has_country_flag = xvcv_mdlc_leader_class_set_to_admiral
+
+        }
+    }
+}
+xvcv_mdlc_leader_class_governor_button_trigger = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_already_picked_class.fail
+        NOR = {
+
+            has_country_flag = xvcv_mdlc_leader_class_set_to_scientist
+            has_country_flag = xvcv_mdlc_leader_class_set_to_admiral
+            has_country_flag = xvcv_mdlc_leader_class_set_to_general
+        }
+    }
+}
+xvcv_mdlc_leader_class_scientist_button_trigger = {
+    custom_tooltip_fail = {
+        text = xvcv_mdlc_leader_already_picked_class.fail
+        NOR = {
+            has_country_flag = xvcv_mdlc_leader_class_set_to_governor
+
+            has_country_flag = xvcv_mdlc_leader_class_set_to_admiral
+            has_country_flag = xvcv_mdlc_leader_class_set_to_general
+        }
+    }
+}

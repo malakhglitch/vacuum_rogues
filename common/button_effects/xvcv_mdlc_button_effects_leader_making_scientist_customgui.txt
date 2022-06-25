@@ -1,0 +1,299 @@
+#scientist traits
+add_xvcv_mdlc_leader_trait_scientist_1_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 1 }
+        xvcv_mdlc_leader_trait_costs_button_trigger_alt = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 1 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect_alt = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_2_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 2 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 2 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_3_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 3 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 3 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_4_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 4 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes    
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 4 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_5_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 5 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 5 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_6_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 6 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 6 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_7_button_effect = {
+    potential = { always = yes }
+    allow = {
+        if = {
+            limit = { host_has_dlc = "Ancient Relics Story Pack" }
+            custom_tooltip = tooltip_xvcv_mdlc_leader_trait_scientist_7
+        }
+        else_if = {
+            limit = { NOT = { host_has_dlc = "Ancient Relics Story Pack" } }
+            custom_tooltip = tooltip_xvcv_mdlc_leader_trait_scientist_7_no_dlc
+        }
+        custom_tooltip_fail = {
+            text = xvcv_mdlc_leader_already_picked_trait.fail
+            NOT = { has_country_flag = xvcv_mdlc_leader_trait_scientist_7 }
+        }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        if = {
+            limit = { host_has_dlc = "Ancient Relics Story Pack" }
+            custom_tooltip = tooltip_xvcv_mdlc_leader_trait_scientist_7
+        }
+        else_if = {
+            limit = { NOT = { host_has_dlc = "Ancient Relics Story Pack" } }
+            custom_tooltip = tooltip_xvcv_mdlc_leader_trait_scientist_7_no_dlc
+        }
+        hidden_effect = {
+            set_country_flag = xvcv_mdlc_leader_trait_scientist_7
+            if = {
+                limit = { NOT = { has_country_flag = xvcv_mdlc_leader_class_set_to_scientist } }
+                set_country_flag = xvcv_mdlc_leader_class_set_to_scientist
+            }
+            xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes
+        }        
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_8_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 8 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 8 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_9_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 9 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 9 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_10_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 10 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 10 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_11_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 11 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 11 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_12_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 12 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 12 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_13_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 13 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 13 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_14_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 14 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 14 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_15_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 15 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 15 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_16_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 16 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 16 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_17_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 17 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 17 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_18_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 18 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 18 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_19_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 19 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 19 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_20_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 20 }
+        xvcv_mdlc_leader_trait_costs_button_trigger = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 20 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect = yes }
+    }
+}
+add_xvcv_mdlc_leader_trait_scientist_21_button_effect = {
+    potential = { always = yes }
+    allow = {
+        xvcv_mdlc_leader_trait_pick_button_trigger = { CLASS = scientist ID = 21 }
+        xvcv_mdlc_leader_trait_costs_button_trigger_alt = yes
+        xvcv_mdlc_leader_trait_points_button_trigger = yes
+        xvcv_mdlc_leader_class_scientist_button_trigger = yes
+    }       
+    effect = {
+        xvcv_mdlc_leader_trait_pick_button_effect = { CLASS = scientist ID = 21 }
+        hidden_effect = { xvcv_mdlc_leader_trait_count_points_costs_button_effect_alt = yes }
+    }
+}
