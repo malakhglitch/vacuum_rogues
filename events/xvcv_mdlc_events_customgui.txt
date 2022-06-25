@@ -6,7 +6,7 @@ country_event = {
 	title = "xvcv_mdlc_customgui.1.name"
 	desc = "xvcv_mdlc_customgui.1.desc"
 	is_triggered_only = yes
-	# diplomatic = yes
+	diplomatic = yes
 
 	picture_event_data = { portrait = root.ruler } #to remove "[06:59:30][portraitobject.cpp:493]: Failed to find portrait selector" error log
 
